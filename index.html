@@ -25,12 +25,22 @@
       </ul>
     </nav>
   </header>
-<!-- Aca va la info de la web. En mi caso un carrousl, pero con 1 imagen porque no se hacelo con mas. Vehiculos destacados
+<!-- Aca va la info de la web. Ahora si se hacer corrousell con Bootstrap. Vehiculos destacados
 que lleva a info de Toyota. Video y noticias que las pude dividir en 2 -->
   <main>
-    <section class="carrousel">
-      <img src="../SitioToyota/img/ppal.png" width="100%" alt="Imagen Principal">
-    </section>
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./img/carrusel1.png" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="./img/carrusel2.png" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="./img/carrusel3.png" class="d-block w-100" alt="...">
+        </div>
+      </div>
+    </div>
     <section class="vehiculos-section">
       <div class="vehiculos-container">
         <a href="https://ads.e.toyota.com.ar/inventory/corolla-cross-hybrid" target="_blank" title="Corolla Cross">

@@ -29,7 +29,7 @@ header {
   text-align: right;
   transform: scale(1.1);
   cursor: pointer;
-  box-shadow: 0 0 10px rgb(red, );
+  box-shadow: 0 0 10px red;
 }
 
 .menu ul {
@@ -107,8 +107,6 @@ h3 {
   cursor: pointer;
 }
 
-
-
 .logo div {
   background-color: #f2f2f2;
   padding: 30px;
@@ -124,7 +122,6 @@ h3 {
   display: flex;
   flex-wrap: wrap-reverse;
   justify-content: center;
-
 }
 
 .vehiculos-section h2 {
@@ -210,4 +207,40 @@ footer a {
 footer .contact-info p {
   margin: 0;
   line-height: 1.5;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .logo img {
+    width: 100px;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .logo div {
+    padding: 10px;
+  }
+
+  .noticias-container,
+  .video-container {
+    width: 100%;
+    float: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .vehiculos-section {
+    flex-direction: column;
+  }
+
+  .vehiculos-container {
+    flex-direction: column;
+  }
+
+  .vehiculo {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
 }
