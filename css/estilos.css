@@ -5,6 +5,24 @@
   box-sizing: border-box;
 }
 
+.whatsapp-icon {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.whatsapp-icon.show {
+  opacity: 1;
+}
+
+@media (max-width: 767.98px) {
+  .whatsapp-icon {
+    display: none;
+  }
+}
 body {
   font-family: 'Bebas Neue', sans-serif;
   margin: 0;
