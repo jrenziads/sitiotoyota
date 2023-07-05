@@ -1,32 +1,9 @@
+@charset "UTF-8";
 /* Estilos generales */
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-}
-
-.whatsapp-icon {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  z-index: 9999;
-  opacity: 0;
-  transition: opacity 0.3s ease-in-out;
-}
-
-.whatsapp-icon.show {
-  opacity: 1;
-}
-
-@media (max-width: 767.98px) {
-  .whatsapp-icon {
-    display: none;
-  }
-}
-body {
-  font-family: 'Bebas Neue', sans-serif;
-  margin: 0;
-  padding: 0;
 }
 
 /* Encabezado */
@@ -38,150 +15,27 @@ header {
   justify-content: space-between;
   align-items: center;
 }
-
-.logo img {
+header .logo img {
   width: 150px;
 }
-
-.menu:hover {
+header .menu:hover {
   text-align: right;
   transform: scale(1.1);
   cursor: pointer;
   box-shadow: 0 0 10px red;
 }
-
-.menu ul {
+header .menu ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
-
-.menu li {
+header .menu ul li {
   display: inline-block;
   margin-left: 10px;
 }
-
-.menu a {
+header .menu ul li a {
   text-decoration: none;
   color: #fff;
-}
-
-/* Contenido principal */
-.carrousel img {
-  width: 100%;
-  display: flex;
-}
-
-main {
-  padding: 20px;
-  overflow: hidden;
-}
-
-section {
-  margin-bottom: 40px;
-}
-
-h1,
-h2,
-h3 {
-  margin: 0;
-  padding: 0;
-  text-align: center;
-}
-
-.vehiculos-section {
-  background-color: #f2f2f2;
-  padding: 30px;
-  display: flex;
-  flex-wrap: wrap-reverse;
-  justify-content: center;
-}
-
-.contacto {
-  background-color: #f2f2f2;
-  padding: 30px;
-  margin: 0;
-}
-
-.contacto label {
-  margin-bottom: 5px;
-  display: block;
-}
-
-.contacto input,
-.contacto textarea {
-  margin-bottom: 10px;
-  padding: 5px;
-  display: flex;
-  width: 100%;
-  box-sizing: border-box;
-}
-
-.contacto button {
-  padding: 10px 20px;
-  background-color: #4CAF50;
-  color: white;
-  border: none;
-  cursor: pointer;
-}
-
-.logo div {
-  background-color: #f2f2f2;
-  padding: 30px;
-}
-
-.logo h2 {
-  background-color: #f2f2f2;
-  padding: 20px;
-  text-align: center;
-}
-
-.vehiculos-container {
-  display: flex;
-  flex-wrap: wrap-reverse;
-  justify-content: center;
-}
-
-.vehiculos-section h2 {
-  text-decoration-color: #e60012;
-  text-align: center;
-}
-
-.vehiculo {
-  flex: 1;
-  margin-right: 0px;
-}
-
-.vehiculo img {
-  width: 100%;
-  border-radius: 5px;
-}
-
-.noticias-container {
-  width: 50%;
-  float: left;
-}
-
-.video-container {
-  width: 50%;
-  float: right;
-}
-
-.video-container iframe {
-  width: 100%;
-}
-
-.vehiculos-section div label {
-  display: inline-block;
-  width: 80px;
-}
-
-.fcc-btn {
-  background-color: red;
-  color: white;
-  width: 100%;
-  text-align: center;
-  text-decoration-style: solid;
 }
 
 /* Pie de página */
@@ -191,74 +45,158 @@ footer {
   padding: 20px;
   clear: both;
 }
-
-.footer-content {
+footer .footer-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-
 footer .social-media {
   float: left;
 }
-
 footer .contact-info {
   float: right;
 }
-
-footer ul {
+footer .contact-info ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
-
-footer li {
+footer .contact-info ul li {
   display: inline;
   margin-left: 10px;
 }
-
-footer a {
+footer .contact-info ul li a {
   text-decoration: none;
   color: #fff;
 }
-
 footer .contact-info p {
   margin: 0;
   line-height: 1.5;
 }
 
-/* Media Queries */
+body {
+  font-family: "Bebas Neue", sans-serif;
+  margin: 0;
+  padding: 0;
+  /* Contenido principal */
+  /* Media Queries */
+}
+body main {
+  padding: 20px;
+  overflow: hidden;
+}
+body main section {
+  margin-bottom: 40px;
+}
+body main h1,
+body main h2,
+body main h3 {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+body main .vehiculos-section {
+  background-color: #f2f2f2;
+  padding: 30px;
+  display: flex;
+  flex-wrap: wrap-reverse;
+  justify-content: center;
+}
+body main .vehiculos-section .contacto {
+  background-color: #f2f2f2;
+  padding: 30px;
+  margin: 0;
+}
+body main .vehiculos-section .contacto label {
+  margin-bottom: 5px;
+  display: block;
+}
+body main .vehiculos-section .contacto input,
+body main .vehiculos-section .contacto textarea {
+  margin-bottom: 10px;
+  padding: 5px;
+  display: flex;
+  width: 100%;
+  box-sizing: border-box;
+}
+body main .vehiculos-section .contacto button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+body main .vehiculos-section .logo div {
+  background-color: #f2f2f2;
+  padding: 30px;
+}
+body main .vehiculos-section .logo div h2 {
+  background-color: #f2f2f2;
+  padding: 20px;
+  text-align: center;
+}
+body main .vehiculos-section .vehiculos-container {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  justify-content: center;
+}
+body main .vehiculos-section .vehiculos-container .vehiculo {
+  flex: 1;
+  margin-right: 0px;
+}
+body main .vehiculos-section .vehiculos-container .vehiculo img {
+  width: 100%;
+  border-radius: 5px;
+}
+body main .noticias-container {
+  width: 50%;
+  float: left;
+}
+body main .video-container {
+  width: 50%;
+  float: right;
+}
+body main .video-container iframe {
+  width: 100%;
+}
+body main .vehiculos-section div label {
+  display: inline-block;
+  width: 80px;
+}
+body main .fcc-btn {
+  background-color: red;
+  color: white;
+  width: 100%;
+  text-align: center;
+  text-decoration-style: solid;
+}
 @media (max-width: 768px) {
-  .logo img {
+  body .logo img {
     width: 100px;
   }
-
-  .menu {
+  body .menu {
     display: none;
   }
-
-  .logo div {
+  body .logo div {
     padding: 10px;
   }
-
-  .noticias-container,
-  .video-container {
+  body .noticias-container,
+  body .video-container {
     width: 100%;
     float: none;
   }
 }
-
 @media (max-width: 600px) {
-  .vehiculos-section {
+  body .vehiculos-section {
     flex-direction: column;
   }
-
-  .vehiculos-container {
+  body .vehiculos-container {
     flex-direction: column;
   }
-
-  .vehiculo {
+  body .vehiculos-container .vehiculo {
     margin-right: 0;
     margin-bottom: 20px;
   }
 }
+
+/*# sourceMappingURL=estilos.css.map */

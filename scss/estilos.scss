@@ -1,0 +1,149 @@
+@import'variables';
+@import'generales';
+@import'header';
+@import'footer';
+
+body {
+  font-family: 'Bebas Neue', sans-serif;
+  margin: 0;
+  padding: 0;
+
+  /* Contenido principal */
+  main {
+    padding: 20px;
+    overflow: hidden;
+
+    section {
+      margin-bottom: 40px;
+    }
+
+    h1,
+    h2,
+    h3 {
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+
+    .vehiculos-section {
+      background-color: #f2f2f2;
+      padding: 30px;
+      display: flex;
+      flex-wrap: wrap-reverse;
+      justify-content: center;
+
+      .contacto {
+        background-color: #f2f2f2;
+        padding: 30px;
+        margin: 0;
+
+        label {
+          margin-bottom: 5px;
+          display: block;
+        }
+
+        input,
+        textarea {
+          margin-bottom: 10px;
+          padding: 5px;
+          display: flex;
+          width: 100%;
+          box-sizing: border-box;
+        }
+
+        button {
+          padding: 10px 20px;
+          background-color: #4CAF50;
+          color: white;
+          border: none;
+          cursor: pointer;
+        }
+      }
+
+      .logo div {
+        background-color: #f2f2f2;
+        padding: 30px;
+
+        h2 {
+          background-color: #f2f2f2;
+          padding: 20px;
+          text-align: center;
+        }
+      }
+
+      .vehiculos-container {
+        display: flex;
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+
+        .vehiculo {
+          flex: 1;
+          margin-right: 0px;
+
+          img {
+            width: 100%;
+            border-radius: 5px;
+          }
+        }
+      }
+    }
+
+    .noticias-container {
+      width: 50%;
+      float: left;
+    }
+
+    .video-container {
+      width: 50%;
+      float: right;
+
+      iframe {
+        width: 100%;
+      }
+    }
+
+    .vehiculos-section div label {
+      display: inline-block;
+      width: 80px;
+    }
+
+    .fcc-btn {
+      background-color: red;
+      color: white;
+      width: 100%;
+      text-align: center;
+      text-decoration-style: solid;
+    }
+  }
+
+  
+  /* Media Queries */
+  @media (max-width: 768px) {
+    .logo img {
+      width: 100px;
+    }
+    .menu {
+      display: none;
+    }
+    .logo div {
+      padding: 10px;
+    }
+    .noticias-container,
+    .video-container {
+      width: 100%;
+      float: none;
+    }
+  }
+  @media (max-width: 600px) {
+    .vehiculos-section {
+      flex-direction: column;
+    }
+    .vehiculos-container {
+      flex-direction: column;
+      .vehiculo {
+        margin-right: 0;
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
